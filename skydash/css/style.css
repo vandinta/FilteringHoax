@@ -1,0 +1,76 @@
+.circle{
+    width: 51px;
+    height: 51px;
+    background-color: #F58924;
+    border-radius: 100px;
+}
+.circle-two{
+    width: 51px;
+    height: 51px;
+    background-color: #7166F9;
+    border-radius: 100px;
+}
+.circle-three{
+    width: 51px;
+    height: 51px;
+    background-color: #009EFE;
+    border-radius: 100px;
+}
+.circle-four{
+    width: 51px;
+    height: 51px;
+    background-color: #fed800;
+    border-radius: 100px;
+}
+
+input[type="checkbox"]{
+    position: relative;
+    width: 100px;
+    height: 40px;
+    background: #E13333;
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 20px;
+    transition: .4s;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+input:checked[type="checkbox"] {
+    background: #3DD880;
+}
+input[type="checkbox"]::before{
+    z-index: 2;
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #CBC4C4;
+    border-radius: 50%;
+    transform: scale(1.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+input:checked[type="checkbox"]::before {
+    left: 57px;
+}
+.toggle{
+    position: relative;
+    display: inline;
+}
+label{
+    position: absolute;
+    font-weight: 600;
+    font-size: 20px;
+    pointer-events: none;
+    color: #fff;
+}
+.onbtn{
+    bottom: 5px;
+    left: 15px;
+    
+}
+.offbtn{
+    bottom: 5px;
+    right: 14px;
+}
